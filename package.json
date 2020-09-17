@@ -1,0 +1,30 @@
+{
+  "name": "todolistapi",
+  "version": "1.0.0",
+  "description": "RESTful todoListApi",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaoGadelha/todolistapi.git"
+  },
+  "keywords": [
+    "todolistapi"
+  ],
+  "author": "JoaoRicardoTG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoaoGadelha/todolistapi/issues"
+  },
+  "homepage": "https://github.com/JoaoGadelha/todolistapi#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "mongoose": "^5.10.5",
+    "nodemon": "^2.0.4"
+  }
+}
