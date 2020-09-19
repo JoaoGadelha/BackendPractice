@@ -70,7 +70,7 @@ After the terminal displays the message `Lambda server is listening on 9000`, go
 
 `http://localhost:9000/.netlify/functions/index`
 
-If everything is set correctly, a message `Home Page` should be displayed on the browser. For the moment, your site is only running locally, now you must upload it to Github and Netlify for a live version of your site.
+If everything is set correctly, a message `Home Page` should be displayed on the browser. For the moment, your site is only running locally, now you must upload it to Github and Netlify for a live version.
 
 9. Upload the project folder to a new Github repository [here](https://github.com/). Remember that the `node_modules` must not be included in the repository.
 
