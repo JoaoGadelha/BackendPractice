@@ -3,7 +3,7 @@ Implementing an API and form submission with Node.js and MongoDB
 
 ## Preparing a new project with Express deployable on Netlify
 These steps are extracted from [this video tutorial](https://www.youtube.com/watch?v=hQAu0YEIF0g&ab_channel=OhSeeMedia) on youtube and lead to the creation of a new project with Express for deployment on Netlify.
-1. Create a new package.js file
+1. Create a new package.js file by typing in the terminal the following code
 
 `npm init -y`
  
@@ -62,3 +62,7 @@ module.exports.handler = serverless(app);
        "build": "./node_modules/.bin/netlify-lambda build src"
 }
 ```
+8. Add the project folder to a new Github repository [here](https://github.com/) 
+
+
+
