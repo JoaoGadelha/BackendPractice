@@ -48,6 +48,8 @@ const serverless = require('serverless-http');
 const app = express();
 const router = express.Router();
 
+app.use(cors());
+
 router.get('/', (req,res) => {
       res.send('Home page');
 });
