@@ -9,15 +9,11 @@ These steps are extracted from [this video tutorial](https://www.youtube.com/wat
  
 2. Install netlify packages
 
-`npm install netlify-lambda serverless-http`
+`npm install netlify-lambda serverless-http cors express`
 
 No need to install the package `nodemon` to update changes, these packages will do it automatically. Some other packages that may be important during development
 
-`npm install cors express mongoose dotenv`
-
-cors - deals with CORS errors for fetching resources from API's from different origins
-
-express - Node framework
+`npm install  mongoose dotenv`
 
 mongoose - connects the project to a mongo database on MongoDB Atlas 
 
