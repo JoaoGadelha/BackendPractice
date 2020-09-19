@@ -15,6 +15,12 @@ Some other packages that may be important during development
 
 `npm install cors express mongoose`
 
+cors - deals with CORS errors for fetching resources from API's from different origins
+
+express - Node framework
+
+mongoose - connects the project to a mongo database on MongoDB Atlas 
+
 3. Create a .gitignore with the following lines
 
 `node_modules`
