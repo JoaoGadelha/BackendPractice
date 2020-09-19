@@ -62,11 +62,29 @@ module.exports.handler = serverless(app);
        "build": "./node_modules/.bin/netlify-lambda build src"
 }
 ```
-8. Add the project folder to a new Github repository [here](https://github.com/). Remember that the `node_modules` must not be included in the repository.
+8. Before proceding further, you must run your server at least once. So type the following on the terminal 
 
-9. Deploy the site on Netlify. In the build settings, set `Build command` equal to `npm run build` and `Publish directory` equal to `dist`
+`npm start`
 
-Your site must be running by now. To test, go to live site and 
+After the terminal displays the message `Lambda server is listening on 9000`, go to the website with the following URL
+
+`http://localhost:9000/.netlify/functions/index`
+
+If everything is set correctly, a message `Home Page` should be displayed on the browser. For the moment, your site is only running locally, now you must upload it to Github and Netlify for a live version of your site.
+
+9. Upload the project folder to a new Github repository [here](https://github.com/). Remember that the `node_modules` must not be included in the repository.
+
+10. Deploy the site on Netlify. In the build settings, set `Build command` equal to `npm run build` and `Publish directory` equal to `dist`
+
+Do the same test from step 8, but substitute `http://localhost:9000` with the random URL that Netlify  assigns to your site. For example, if your site has the following URL
+
+`https://admiring-nobel-467fdc.netlify.app`
+
+To access your express project online, go to the following URL
+
+`https://admiring-nobel-467fdc.netlify.app/.netlify/functions/index`
+
+If you see `Home Page` again, then your site is working correctly.
 
 
 
