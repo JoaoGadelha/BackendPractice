@@ -8,7 +8,9 @@ Implementing an API and form submission with Node.js and MongoDB
 `npm init -y`
  
 2. Install netlify packages
+
 `npm install netlify-lambda serverless-http`
 
-Some other packages that may be important during development 
+Some other packages that may be important during development
+
 `npm install cors express mongoose`
