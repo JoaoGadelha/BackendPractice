@@ -39,5 +39,19 @@ The second line must have a tab space before the `functions = "functions"` text
 
 6. Create a folder `src` with a file name `index.js` with the following content
 ```javascript
+const cors = require('cors');
+const express = require('express');
 const serverless = require('serverless-http');
+
+const app = express();
+const router = express.Router();
+
+router.get('/', (req,res) => {
+      res.send('Home page');
+});
+
+app.use('/.netlify/functions/index', router);
+
+module.exports.handler = serverless(app);
+
 ```
