@@ -11,7 +11,7 @@ These steps are extracted from [this video tutorial](https://www.youtube.com/wat
 
 `npm install netlify-lambda serverless-http`
 
-Some other packages that may be important during development
+No need to install the package `nodemon` to update changes, these packages will do it automatically. Some other packages that may be important during development
 
 `npm install cors express mongoose dotenv`
 
