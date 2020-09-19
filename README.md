@@ -17,5 +17,6 @@ Some other packages that may be important during development
 
 3. Create a .gitignore file as follows:
 
-`node_modules<br/>
+`node_modules
+
 functions`
