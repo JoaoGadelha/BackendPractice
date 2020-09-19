@@ -13,13 +13,15 @@ These steps are extracted from [this video tutorial](https://www.youtube.com/wat
 
 Some other packages that may be important during development
 
-`npm install cors express mongoose`
+`npm install cors express mongoose dotenv`
 
 cors - deals with CORS errors for fetching resources from API's from different origins
 
 express - Node framework
 
 mongoose - connects the project to a mongo database on MongoDB Atlas 
+
+dotenv - loads environment-specific values such as database passwords or API keys from a .env file into process.env. Used to hide these values from hackers. The .env file should NOT be commited to Github.
 
 3. Create a .gitignore with the following lines
 
@@ -62,7 +64,11 @@ module.exports.handler = serverless(app);
        "build": "./node_modules/.bin/netlify-lambda build src"
 }
 ```
-8. Add the project folder to a new Github repository [here](https://github.com/) 
+8. Add the project folder to a new Github repository [here](https://github.com/). Remember that the `node_modules` must not be included in the repository.
+
+9. Deploy the site on Netlify. In the build settings, set `Build command` equal to `npm run build` and `Publish directory` equal to `dist`
+
+Your site must be running by now. To test, go to live site and 
 
 
 
