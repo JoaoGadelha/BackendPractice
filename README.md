@@ -37,4 +37,7 @@ The second line must have a tab space before the `functions = "functions"` text
 
 5. Create a folder name `dist` with a `index.html` file inside. The .html file can be empty.
 
-6. Create a folder `src` with a file name `index.js` 
+6. Create a folder `src` with a file name `index.js` with the following content
+```javascript
+const serverless = require('serverless-http');
+```
