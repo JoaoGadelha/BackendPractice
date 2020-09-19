@@ -1,8 +1,8 @@
 # BackendPractice
 Implementing an API and form submission with Node.js and MongoDB
 
-## Preparing a new project deployable on Netlify
-These steps are extracted from [this video tutorial](https://www.youtube.com/watch?v=hQAu0YEIF0g&ab_channel=OhSeeMedia) on youtube and lead to the creation of a new project for deployment on Netlify.
+## Preparing a new project with Express deployable on Netlify
+These steps are extracted from [this video tutorial](https://www.youtube.com/watch?v=hQAu0YEIF0g&ab_channel=OhSeeMedia) on youtube and lead to the creation of a new project with Express for deployment on Netlify.
 1. Create a new package.js file
 
 `npm init -y`
