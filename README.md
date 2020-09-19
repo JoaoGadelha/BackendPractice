@@ -25,7 +25,7 @@ Some other packages that may be important during development
 
 `[build]`
 
-&nbsp;&nbsp;&nbsp;&nbsp;`functions = "functions"`
+&nbsp; &nbsp; &nbsp; &nbsp;`functions = "functions"`
 
 The second line must have a tab space before the `functions = "functions"` text
 
