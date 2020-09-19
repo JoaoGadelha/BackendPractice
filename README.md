@@ -20,3 +20,13 @@ Some other packages that may be important during development
 `node_modules`
 
 `functions`
+
+4. Create a netlify.toml file with the following content
+
+`[build]`
+
+`    functions = "functions"`
+
+The second line must have a tab space before the `functions = "functions"` text
+
+5.
