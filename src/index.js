@@ -10,8 +10,8 @@ let resolvedPath = path.resolve('./index.html');
 let mongoose = require('mongoose');
 const cors = require('cors');
 const Post = require('./Post');
-app.use('/.netlify/functions/index',router);
 app.use(cors());
+app.use('/.netlify/functions/index',router);
 
  mongoose.connect('mongodb+srv://joaoricardotg:Crataeva11@cluster0.mxdus.mongodb.net/joaoricardotg?retryWrites=true&w=majority;', {useNewUrlParser: true, useUnifiedTopology: true},(err, db) => { 
     console.log('Connected to DB!');
