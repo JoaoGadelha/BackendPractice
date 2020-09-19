@@ -84,7 +84,7 @@ To access your express project online, go to the following URL
 
 `https://admiring-nobel-467fdc.netlify.app/.netlify/functions/index`
 
-If you see `Home Page` again, then your site is working correctly.
+If you see the `Home Page` message again, then your site is working correctly.
 
 
 
