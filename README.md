@@ -55,3 +55,10 @@ app.use('/.netlify/functions/index', router);
 module.exports.handler = serverless(app);
 
 ```
+7. In the `package.json`, modify the value of the "scripts" key in the following manner 
+```javascript
+"scripts": {
+       "start": "./node_modules/.bin/netlify-lambda serve src",
+       "build": "./node_modules/.bin/netlify-lambda build src"
+}
+``
