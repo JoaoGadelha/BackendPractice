@@ -14,3 +14,5 @@ Implementing an API and form submission with Node.js and MongoDB
 Some other packages that may be important during development
 
 `npm install cors express mongoose`
+
+3. Create a .gitignore file with `node_modules` and `functions` in separate lines
