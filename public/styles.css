@@ -1,5 +1,54 @@
-.container {
-    background: red;
-    color: white;
-    font-size:30px;
+.buttonsContainer {
+    width: 230px;
+    height: 25px;
+    position: absolute;
+    left: 50%;
+    margin-left: -115px;
+    top: 30%;
+    margin-top: -10px;
+}
+
+.container.containerFind {
+    opacity: 1;
+}
+
+.container { 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 200px;
+    width: 400px;
+    opacity: 0;
+}
+
+.container form{
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    height: 200px;
+    width: 400px;
+    background: #b8b8b8;
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+}
+
+.containerCreate form{
+    position: absolute;
+    left: -50%;
+    top: -50%;
+}
+.containerCreate form > * {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.containerCreate form > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 40px;
+    width: 70%;
+    justify-items: end;
 }

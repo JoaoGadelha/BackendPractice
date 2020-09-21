@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
+
 <body>
-    <h1 class='container'>Hello</h1>
+    <!-- <h1 class='titleH1'>1</h1>
+    <button onclick=somar()>Somar 1</button>
+    <button onclick=esconder()>Esconder</button> -->
+    <div class='wrapper'>
+        <div class='buttonsContainer'>
+            <button onclick="clickFunc(event,'containerFind')">Find</button>
+            <button onclick="clickFunc(event,'containerCreate')">Create</button>
+            <button onclick="clickFunc(event,'containerUpdate')">Update</button>
+            <button onclick="clickFunc(event,'containerDelete')">Delete</button>
+        </div>
+        <div class='container containerFind'>
+            <form></form>
+        </div>
+        <div class='container containerCreate'>
+            <form action="/test">
+                <div>
+                    <label>Title:</label>
+                    <input name='title' id='title'>
+                    <label>Old price:</label>
+                    <input name='oldPrice'>
+                    <label>Price:</label>
+                    <input name='price'>
+                    <label>Image:</label>
+                    <input name='image'>
+                </div>
+                <button>Submit</button>
+            </form>
+        </div>
+        <div class='container containerUpdate'><form></form></div>
+        <div class='container containerDelete'><form></form></div>
+    </div>
+    <script src='script.js'></script>
 </body>
+
 </html>
