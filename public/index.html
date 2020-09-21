@@ -20,25 +20,61 @@
             <button onclick="clickFunc(event,'containerDelete')">Delete</button>
         </div>
         <div class='container containerFind'>
-            <form></form>
-        </div>
-        <div class='container containerCreate'>
-            <form action="/test">
+            <form action="/find/type" method=GET class='findForm'>
+                <h1>Find</h1>
                 <div>
                     <label>Title:</label>
                     <input name='title' id='title'>
+                    </datalist>
                     <label>Old price:</label>
                     <input name='oldPrice'>
                     <label>Price:</label>
                     <input name='price'>
                     <label>Image:</label>
                     <input name='image'>
+                    <select name="type" >
+                        <option value="table">Table</option>
+                        <option value="chair">Chair</option>
+                        <option value="phone">Phone</option>
+                        <option value="bed">Bed</option>
+                        <option value="tv">TV</option>
+                        <option value="misc">Misc</option>
+                      </select>
+                </div>
+                <button class='findButton'>Submit</button>
+            </form>
+        </div>
+        <div class='container containerCreate'>
+            <form action="/create" method=GET>
+                <h1>Create</h1>
+                <div>
+                    <label>Title:</label>
+                    <input name='title' id='title'>
+                    </datalist>
+                    <label>Old price:</label>
+                    <input name='oldPrice'>
+                    <label>Price:</label>
+                    <input name='price'>
+                    <label>Image:</label>
+                    <input name='image'>
+                    <select name="type" >
+                        <option value="table">Table</option>
+                        <option value="chair">Chair</option>
+                        <option value="phone">Phone</option>
+                        <option value="bed">Bed</option>
+                        <option value="tv">TV</option>
+                        <option value="misc">Misc</option>
+                      </select>
                 </div>
                 <button>Submit</button>
             </form>
         </div>
-        <div class='container containerUpdate'><form></form></div>
-        <div class='container containerDelete'><form></form></div>
+        <div class='container containerUpdate'>
+            <form></form>
+        </div>
+        <div class='container containerDelete'>
+            <form></form>
+        </div>
     </div>
     <script src='script.js'></script>
 </body>

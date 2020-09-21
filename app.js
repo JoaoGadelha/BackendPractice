@@ -1,26 +1,31 @@
-// create an express app
 const express = require("express")
 const app = express()
 let mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const Post = require('./Post');
 let cors = require('cors');
-// use the express-static middleware
+let createPost = require('./routes/createPost');
+let findPost = require('./routes/findPost');
+require('dotenv').config();
+
+// middlewares
 app.use(cors());
 app.use(express.static("public"));
-app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 
-app.post('/', (req,res) => {
+// routes
+app.use('/create', createPost);
+app.use('/find', findPost);
+
+// database
+mongoose.connect(process.env.DB_CONNECT,{ useNewUrlParser: true, useUnifiedTopology: true  }, () => { console.log('Connected to DB.') });
+/* 
+app.post('/', (req, res) => {
     console.log(req.body);
-    res.send('hello');
+    res.send('Home Page : POST');
 })
 
-app.get('/test', (req,res) => {
-    res.send([req.query.title,req.query.price,req.query.oldPrice]);
-})
-
-// define the first route
-app.get("/posts", async function  (req, res) {
+app.get("/", async function (req, res) {
     try {
         const posts = await Post.find();
         res.json(posts);
@@ -28,14 +33,8 @@ app.get("/posts", async function  (req, res) {
     } catch (err) {
         res.json({ message: err });
     }
-})
-
-
-mongoose.connect('mongodb+srv://joaoricardotg:Crataeva11@cluster0.mxdus.mongodb.net/joaoricardotg?retryWrites=true&w=majority;', { useNewUrlParser: true, useUnifiedTopology: true }, (err, db) => {
-    console.log('Connected to DB!');
-})
-
+}) */
 
 // start the server listening for requests
-app.listen(process.env.PORT || 3000,
-    () => console.log("Server is running..."));
+app.listen((process.env.PROC_PORT || 3000),
+    () => console.log("Server is running in port " + (process.env.PROC_PORT || 3000)));
