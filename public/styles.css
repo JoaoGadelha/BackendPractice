@@ -13,7 +13,7 @@ button, label {
     position: absolute;
     left: 50%;
     margin-left: -125px;
-    top: 25%;
+    top: 20%;
     margin-top: -10px;
 }
 
@@ -26,7 +26,7 @@ button, label {
     position: absolute;
     left: 50%;
     top: 50%;
-    height: 250px;
+    height: 350px;
     width: 400px;
     opacity: 0;
 }
@@ -35,7 +35,7 @@ button, label {
     position: absolute;
     left: -50%;
     top: -50%;
-    height: 250px;
+    height: 350px;
     width: 400px;
     background: #33373A;
     border-radius: 10px;
@@ -58,11 +58,24 @@ button, label {
     justify-items: end;
 }
 
+select{
+    justify-self: start;
+    
+}
+
 .container h1 {
     position: absolute;
     z-index: 100;
     left: 50%;
-    top: 10%;
+    top: 5%;
     color:rgb(114, 255, 114);
     margin-left: -30px;
+}
+
+.subbutton {
+    position:relative;
+    top:10px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
 }

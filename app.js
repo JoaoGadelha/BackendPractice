@@ -6,6 +6,8 @@ const Post = require('./Post');
 let cors = require('cors');
 let createPost = require('./routes/createPost');
 let findPost = require('./routes/findPost');
+let updatePost = require('./routes/updatePost');
+let deletePost = require('./routes/deletePost');
 require('dotenv').config();
 
 // middlewares
@@ -16,6 +18,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // routes
 app.use('/create', createPost);
 app.use('/find', findPost);
+app.use('/update', updatePost);
+app.use('/delete',deletePost);
 
 // database
 mongoose.connect(process.env.DB_CONNECT,{ useNewUrlParser: true, useUnifiedTopology: true  }, () => { console.log('Connected to DB.') });

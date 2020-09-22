@@ -20,28 +20,22 @@
             <button onclick="clickFunc(event,'containerDelete')">Delete</button>
         </div>
         <div class='container containerFind'>
-            <form action="/find/type" method=GET class='findForm'>
+            <form method=GET class='findForm'>
                 <h1>Find</h1>
                 <div>
-                    <label>Title:</label>
-                    <input name='title' id='title'>
-                    </datalist>
-                    <label>Old price:</label>
-                    <input name='oldPrice'>
-                    <label>Price:</label>
-                    <input name='price'>
-                    <label>Image:</label>
-                    <input name='image'>
-                    <select name="type" >
-                        <option value="table">Table</option>
-                        <option value="chair">Chair</option>
-                        <option value="phone">Phone</option>
-                        <option value="bed">Bed</option>
-                        <option value="tv">TV</option>
-                        <option value="misc">Misc</option>
-                      </select>
+                    <label>Search by:</label>
+                    <select name="searchOptions" class='findSelect'>
+                        <option value='id'>Id</option>
+                        <option value="title">Title</option>
+                        <option value="oldPrice">Old price</option>
+                        <option value="price">Price</option>
+                        <option value="image">Image</option>
+                        <option value="type">Type</option>
+                    </select>
+                    <label>Type your search here:</label>
+                    <input class='findInput'>
                 </div>
-                <button class='findButton'>Submit</button>
+                <button class='subbutton findButton' onclick='findFunc(event)'>Submit</button>
             </form>
         </div>
         <div class='container containerCreate'>
@@ -49,7 +43,7 @@
                 <h1>Create</h1>
                 <div>
                     <label>Title:</label>
-                    <input name='title' id='title'>
+                    <input name='title'>
                     </datalist>
                     <label>Old price:</label>
                     <input name='oldPrice'>
@@ -57,23 +51,56 @@
                     <input name='price'>
                     <label>Image:</label>
                     <input name='image'>
-                    <select name="type" >
+                    <label>Type:</label>
+                    <select name="type">
                         <option value="table">Table</option>
                         <option value="chair">Chair</option>
                         <option value="phone">Phone</option>
                         <option value="bed">Bed</option>
                         <option value="tv">TV</option>
                         <option value="misc">Misc</option>
-                      </select>
+                    </select>
                 </div>
-                <button>Submit</button>
+                <button class='subbutton'>Submit</button>
             </form>
         </div>
         <div class='container containerUpdate'>
-            <form></form>
+            <form method=GET class='updateForm'>
+                <h1>Update</h1>
+                <div>
+                    <label>Id:</label>
+                    <input name='id' class='updateId'>
+                    <label>Title:</label>
+                    <input name='title'>
+                    </datalist>
+                    <label>Old price:</label>
+                    <input name='oldPrice'>
+                    <label>Price:</label>
+                    <input name='price'>
+                    <label>Image:</label>
+                    <input name='image'>
+                    <label>Type:</label>
+                    <select name="type">
+                        <option value="table">Table</option>
+                        <option value="chair">Chair</option>
+                        <option value="phone">Phone</option>
+                        <option value="bed">Bed</option>
+                        <option value="tv">TV</option>
+                        <option value="misc">Misc</option>
+                    </select>
+                </div>
+                <button class='subbutton' onclick='updateFunc(event)'>Submit</button>
+            </form>
         </div>
         <div class='container containerDelete'>
-            <form></form>
+            <form method=GET class='deleteForm'>
+                <h1>Delete</h1>
+                <div>
+                    <label>Id:</label>
+                    <input class='deleteId'>
+                </div>
+                <button class='subbutton deleteButton' onclick='deleteFunc(event)'>Submit</button>
+            </form>
         </div>
     </div>
     <script src='script.js'></script>
