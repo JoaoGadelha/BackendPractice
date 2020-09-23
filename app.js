@@ -22,7 +22,7 @@ app.use('/update', updatePost);
 app.use('/delete',deletePost);
 
 // database
-mongoose.connect('mongodb+srv://joaoricardotg:Crataeva11@cluster0.mxdus.mongodb.net/joaoricardotg?retryWrites=true&w=majority',{ useNewUrlParser: true, useUnifiedTopology: true  }, () => { console.log('Connected to DB.') });
+mongoose.connect(process.env.DB_CONNECT,{ useNewUrlParser: true, useUnifiedTopology: true  }, () => { console.log('Connected to DB.') });
 /* 
 app.post('/', (req, res) => {
     console.log(req.body);
