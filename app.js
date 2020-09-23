@@ -21,8 +21,8 @@ app.use('/find', findPost);
 app.use('/update', updatePost);
 app.use('/delete',deletePost);
 
-// database
-mongoose.connect(process.env.DB_CONNECT,{ useNewUrlParser: true, useUnifiedTopology: true  }, () => { console.log('Connected to DB.') });
+// database 
+mongoose.connect(process.env.MONGODB_URI,{ useNewUrlParser: true, useUnifiedTopology: true  }, () => { console.log('Connected to DB.') });
 /* 
 app.post('/', (req, res) => {
     console.log(req.body);
