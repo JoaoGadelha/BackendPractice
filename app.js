@@ -40,5 +40,5 @@ app.get("/", async function (req, res) {
 }) */
 
 // start the server listening for requests
-app.listen((process.env.PROC_PORT || 3000),
-    () => console.log("Server is running in port " + (process.env.PROC_PORT || 3000)));
+app.listen((process.env.PORT || 3000),
+    () => console.log("Server is running in port " + (process.env.PORT || 3000)));
