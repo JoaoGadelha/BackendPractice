@@ -66,3 +66,15 @@ const deleteFunc = (e) => {
 
     deleteForm[0].action = '/delete/' + deleteId;
 }
+
+///////////////////////////////////////////////////////////
+let count_aicf = 1;
+const addInputCreateForm = (e) => {
+    e.preventDefault();
+    count_aicf += 1;
+
+    let newInputField = document.createElement('INPUT');
+    newInputField.setAttribute('name', 'image'+count_aicf);
+     document.getElementById('createFormDiv').appendChild(newInputField);
+
+}

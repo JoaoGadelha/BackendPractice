@@ -79,3 +79,20 @@ select{
     height: 50px;
     border-radius: 10px;
 }
+
+.createForm-plusButton {
+    position: absolute;
+    top: 47%;
+    right: 0%;
+}
+
+.typeLabel-createForm {
+    position:relative;
+    left: 105px;
+}
+
+.typeSelect-createForm {
+    position:relative;
+    left: -15px;
+    top: -25px;
+}

@@ -39,9 +39,9 @@
             </form>
         </div>
         <div class='container containerCreate'>
-            <form action="/create" method=GET>
+            <form action="/create" method=GET class='createForm'>
                 <h1>Create</h1>
-                <div>
+                <div id='createFormDiv'>
                     <label>Title:</label>
                     <input name='title'>
                     </datalist>
@@ -50,9 +50,12 @@
                     <label>Price:</label>
                     <input name='price'>
                     <label>Image:</label>
-                    <input name='image'>
-                    <label>Type:</label>
-                    <select name="type">
+                    <input name='image1'>
+                    <button class='createForm-plusButton' onclick='addInputCreateForm(event)'>MAIS</button>
+                    
+                </div>
+                <label class='typeLabel-createForm'>Type:</label>
+                    <select name="type" class='typeSelect-createForm'>
                         <option value="table">Table</option>
                         <option value="chair">Chair</option>
                         <option value="phone">Phone</option>
@@ -60,7 +63,6 @@
                         <option value="tv">TV</option>
                         <option value="misc">Misc</option>
                     </select>
-                </div>
                 <button class='subbutton'>Submit</button>
             </form>
         </div>

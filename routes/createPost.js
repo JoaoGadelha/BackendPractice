@@ -9,12 +9,12 @@ createPost.get('/', async (req, res) => {
         title: req.query.title,
         price: req.query.price,
         oldPrice: req.query.oldPrice,
-        image: req.query.image,
+        image: ['https://i.ibb.co/VMn8mG7/img12.jpg', 'https://i.ibb.co/VMn8mG7/img12.jpg'],
         type: req.query.type
     });
      try {
         savedPost = await post.save();
-        res.json(savedPost);
+        res.json(post);
     } catch (err) {
         res.json({ message: err });
     } 
