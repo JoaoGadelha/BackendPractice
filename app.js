@@ -1,5 +1,6 @@
 const express = require("express")
 const app = express()
+require('dotenv').config();
 let mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const Post = require('./Post');
@@ -8,7 +9,6 @@ let createPost = require('./routes/createPost');
 let findPost = require('./routes/findPost');
 let updatePost = require('./routes/updatePost');
 let deletePost = require('./routes/deletePost');
-require('dotenv').config();
 
 // middlewares
 app.use(cors());
