@@ -82,8 +82,14 @@ select{
 
 .createForm-plusButton {
     position: absolute;
-    top: 47%;
-    right: 0%;
+    top: 46%;
+    right: 5%;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.createForm-plusButton:focus {
+    outline: none;
 }
 
 .typeLabel-createForm {

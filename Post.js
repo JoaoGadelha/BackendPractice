@@ -10,8 +10,7 @@ const PostSchema = mongoose.Schema({
         required: true
     },
     oldPrice: {
-        type: String,
-        required: true
+        type: String
     },
     image: {
         type: Array,

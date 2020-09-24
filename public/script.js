@@ -1,7 +1,7 @@
 
 const clickFunc = (evt, action) => {
     let container = document.getElementsByClassName('container');
-    
+
     for (let i = 0; i < 4; i++) {
         container[i].style.opacity = '0';
         container[i].style.zIndex = '1';
@@ -68,13 +68,18 @@ const deleteFunc = (e) => {
 }
 
 ///////////////////////////////////////////////////////////
+// implements the 'plus' button in the create form
+// each time this button is pressed, a new input field is inserted in the 
+// form to input a new image. The limit of image input fields is 3.
 let count_aicf = 1;
 const addInputCreateForm = (e) => {
     e.preventDefault();
-    count_aicf += 1;
+    if (count_aicf < 3) {
+        count_aicf += 1;
 
-    let newInputField = document.createElement('INPUT');
-    newInputField.setAttribute('name', 'image'+count_aicf);
-     document.getElementById('createFormDiv').appendChild(newInputField);
-
+        let newInputField = document.createElement('INPUT');
+        newInputField.setAttribute('name', 'image' + count_aicf);
+        newInputField.style.gridColumn = '2/3';
+        document.getElementById('createFormDiv').appendChild(newInputField);
+    }
 }
