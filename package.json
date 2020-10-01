@@ -1,19 +1,19 @@
 {
-  "name": "react-commerce-users-api",
+  "name": "practice4",
   "version": "1.0.0",
-  "description": "stores information about the users, such as their name, password and email",
-  "main": "app.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon start"
+    "start": "nodemon app.js"
   },
-  "author": "Joao R. T. Gadelha",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mongoose": "^5.10.7",
+    "mongoose": "^5.10.6",
     "nodemon": "^2.0.4"
   }
 }
